@@ -1,0 +1,24 @@
+meta {
+  name: ApproveTaskRequest
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:9000/api/task/approve
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzg3NjAxMDYsInVzZXJfaWQiOjR9.uMmwuVF_px_QHhlDnmPqH-s87TlH5jZqUWUi4xWPwWo
+  ~Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzg3NjAxNTgsInVzZXJfaWQiOjF9.z8fcd9IUL-oD2tZO8SMlTOG8uJ24FEC_AIx6j0aqU9U
+  ~Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzg3NjAwNjksInVzZXJfaWQiOjJ9.8QVZfl7bpntUYqTk9W2XTb4KWUp48ozqvTj3XGIphjU
+  ~Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mzg3NTY5MTcsInVzZXJfaWQiOjR9.xo_Kt79RX4DLYo43aJjPFbchOMAlygnWfe3f2Ee5bnU
+}
+
+body:json {
+  {
+    "task_id" : 2
+  }
+}
