@@ -83,3 +83,5 @@ COMMENTTASK API = "/api/task/comment"
 GETTASK API 	= "/api/task/get/{id}"
 
 Testing of the flow is achieved via APIs in a sequential manner. We are making use of BRUNO API manager to test the flow.
+The service is run using a docker.
+*RUN*: docker-compose up
