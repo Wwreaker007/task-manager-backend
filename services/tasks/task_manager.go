@@ -50,6 +50,7 @@ func (tsm *TaskServiceManager) CreateTask(ctx context.Context, r contracts.Creat
 
 		// Notify the approvers
 		tsm.notify.SendNotification(ctx, messages)
+		fmt.Println("Sent notifications to approvers !")
 	}()
 
 	return contracts.CreateTaskResponse{
